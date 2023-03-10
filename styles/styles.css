@@ -1,0 +1,276 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Oswald&family=Yatra+One&display=swap');
+
+
+/* Color Palette:
+Blue/Black: #0b132b
+Pink/Red: #A40E4C
+White: #FBFBFF
+Bright Blue: #01BAEF
+Light Green: #BBD8B3 */
+
+body {
+    background: rgb(91, 24, 52);
+    background: linear-gradient(149deg, rgba(91, 24, 52, 1) 0%, rgba(164, 14, 76, 1) 36%, rgba(227, 113, 160, 1) 100%);
+    margin: 0px;
+}
+
+.title {
+    font-family: 'Mr Dafoe', cursive;
+    color: #FBFBFF;
+    font-size: 20vh;
+    margin: 20px auto;
+    text-align: center;
+    /* text-shadow: gray -5px 5px 2px; */
+}
+
+#bingo {
+    height: 600px;
+    width: 600px;
+    border: 20px solid #a6c19e;
+    margin: 20px auto;
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(5, 1fr);
+}
+
+.tile {
+    background-color: #FBFBFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ;
+}
+
+.dark {
+    background-color: #BBD8B3;
+}
+
+.tile span,
+.dark span {
+    color: #0b132b;
+    font-size: 4vh;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    padding: 5px;
+}
+
+
+.hotfix {
+    position: fixed;
+    height: 105px;
+    width: 250px;
+    background-color: white;
+    bottom: 1px;
+    padding: 10px;
+    border: 2px solid #0b132b;
+}
+
+.hotfix a {
+    text-decoration: none;
+}
+
+.hotfix img {
+    width: 150px;
+    margin-top: 5px;
+    margin-left: 2px;
+}
+
+.cruisefix {
+    position: fixed;
+    height: 230px;
+    width: 250px;
+    background-color: white;
+    top: 210px;
+    right: 1px;
+    padding-left: 10px;
+    border: 2px solid #0b132b;
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px;
+    color: #eda480;
+}
+
+.hot {
+    font-size: 20px !important;
+    position: absolute;
+    margin-left: 15px;
+    margin-top: -5px;
+    color: rgb(222, 217, 217);
+    cursor: pointer;
+}
+
+.cruise {
+    font-size: 20px !important;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 5px;
+    color: rgb(222, 217, 217);
+    cursor: pointer;
+}
+
+.cruisecontainer {
+    position: relative;
+}
+
+.cruisefix img{
+    width: 240px;
+}
+
+.bottom-right {
+    position: absolute;
+    bottom: 8px;
+    right: 23px;
+    font-family: 'Mr Dafoe', cursive;
+    color: #eda480;
+    text-shadow: #FBFBFF -3px 1px 0;
+}
+
+.brokefix{
+    position: fixed;
+    height: 245px;
+    width: 220px;
+    background-color: white;
+    top: 70px;
+    padding: 10px;
+    border: 2px solid #0b132b;
+}
+
+.broke{
+    font-size: 20px !important;
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -5px;
+    color: rgb(222, 217, 217);
+    cursor: pointer;
+}
+
+.brokefix img{
+    height: 200px;
+}
+
+.brokefix a{
+    text-align: center;
+    margin-left: 45px;
+}
+
+.red{
+    color: red;
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+}
+
+.hide{
+    transition: 0.5s ease;
+    display: none; 
+    visibility: hidden;
+}
+
+.unrevealed{
+    background-color: #0b132b !important;
+}
+
+.rainbow {
+    -webkit-animation: rainbow 10s infinite;
+}
+
+@-webkit-keyframes rainbow {
+    0% {
+        color: orange;
+    }
+
+    10% {
+        color: purple;
+    }
+
+    20% {
+        color: red;
+    }
+
+    30% {
+        color: CadetBlue;
+    }
+
+    40% {
+        color: yellow;
+    }
+
+    50% {
+        color: coral;
+    }
+
+    60% {
+        color: green;
+    }
+
+    70% {
+        color: cyan;
+    }
+
+    80% {
+        color: DeepPink;
+    }
+
+    90% {
+        color: DodgerBlue;
+    }
+
+    100% {
+        color: orange;
+    }
+}
+
+
+/* Hacker page */
+
+.hack{
+    background-image: url(https://giffiles.alphacoders.com/209/209037.gif);
+}
+
+.hackcontainer{
+    background-color: white;
+    height: 80vh;
+    width: 100vh;
+    margin: 40px auto;
+    border-radius: 2px;
+    padding: 15px;
+}
+
+.hackcontainer h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+.hackcontainer img{
+    width: 200px;
+    padding: 30px;
+}
+
+.hackwrapper{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hackwrapper p{
+    padding: 30px;
+    font-size: 20px;
+}
+
+.phone{
+    color: rgb(51, 165, 51);
+    font-weight: bold;
+    text-align: center;
+}
+
+.phone-button{
+    background-color: rgb(237, 229, 229);
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.test{
+    color: magenta !important;
+}
