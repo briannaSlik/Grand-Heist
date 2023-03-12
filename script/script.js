@@ -5,22 +5,21 @@ const hotfix = document.querySelector('.hotfix');
 const virusfix = document.querySelector('.brokefix')
 const virusclose = document.querySelector('.broke')
 
-console.log(JSON.parse())
 
 cruiseclose.addEventListener('click', () => {
-    let time = Math.floor(Math.random()*60000)+5000;
+    let time = Math.floor(Math.random()*300000)+60000;
     cruisefix.classList.add('hide');
     setTimeout(reappear, time, "cruise");
 })
 
 hotclose.addEventListener('click', () => {
-    let time = Math.floor(Math.random()*60000)+5000;
+    let time = Math.floor(Math.random()*300000)+60000;
     hotfix.classList.add('hide');
     setTimeout(reappear, time, "hot");
 })
 
 virusclose.addEventListener('click', () => {
-    let time = Math.floor(Math.random()*60000)+5000;
+    let time = Math.floor(Math.random()*300000)+60000;
     virusfix.classList.add('hide');
     setTimeout(reappear, time, "virus");
 })
@@ -38,7 +37,11 @@ const reappear = (popup) => {
     
 }
 
-// const phone = document.querySelector('.phone-button');
-// phone.addEventListener('click', () => {
-//     document.getElementById('elite').play();
-// })
+let time = Math.floor(Math.random()*30000)+10000;
+setTimeout(reappear, time, "hot");
+
+time = Math.floor(Math.random()*30000)+10000;
+setTimeout(reappear, time, "cruise");
+
+time = Math.floor(Math.random()*30000)+10000;
+setTimeout(reappear, time, "virus");
