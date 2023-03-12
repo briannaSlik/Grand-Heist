@@ -5,6 +5,7 @@ const hotfix = document.querySelector('.hotfix');
 const virusfix = document.querySelector('.brokefix')
 const virusclose = document.querySelector('.broke')
 
+console.log(JSON.parse())
 
 cruiseclose.addEventListener('click', () => {
     let time = Math.floor(Math.random()*60000)+5000;
