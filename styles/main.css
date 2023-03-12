@@ -1,12 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
 * {
     margin: 0px;
     padding: 0px; 
     outline: none;
     border: 0px;
   }
-
+/* 
 html{
     background-color: #0b132b;
+} */
+
+.hidden{
+    display: none !important;
 }
 
 .curtains{
@@ -27,3 +33,67 @@ html{
 
 }
 
+.blackjack-container{
+    background-color: #35654d;
+    height: 90vh;
+    width: 100%;
+    border-radius: 0% 0% 100% 100%;
+    outline: #773726 solid 15px;
+    margin: 0;
+}
+
+.blackjack-container h1{
+    color: #E6E3D3;
+    font-family: 'Kaushan Script', cursive;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    background-color: #E6E3D3;
+    width: 8vw;
+    height: 25vh;
+    border-radius: 5%;
+    margin: 20px;
+    background-image: url(https://opengameart.org/sites/default/files/card%20back%20red.png);
+    background-size: cover;
+    transition: all .3s ease-in-out; 
+}
+
+.card:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.hand{
+    color: #E6E3D3;
+    text-align: center;
+    font-size: 20px;
+}
+
+.hold{
+    color: #E6E3D3;
+    background-color: rgba(230, 227, 211, 0.15);
+    text-align: center;
+    font-size: 20px;
+    /* padding: 10px; */
+    border: #E6E3D3 2px solid;
+    border-radius: 5%;
+    width: 10vw;
+    height: 10vh;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .3s ease-in-out; 
+}
+
+.hold:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}

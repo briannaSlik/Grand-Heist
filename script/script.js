@@ -37,7 +37,7 @@ const reappear = (popup) => {
     
 }
 
-const phone = document.querySelector('.phone-button');
-phone.addEventListener('click', () => {
-    document.getElementById('elite').play();
-})
+// const phone = document.querySelector('.phone-button');
+// phone.addEventListener('click', () => {
+//     document.getElementById('elite').play();
+// })
